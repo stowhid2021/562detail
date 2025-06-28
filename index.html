@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    :root {
+      --primary: #22223b;
+      --accent: #4a4e69;
+      --secondary: #f2e9e4;
+      --highlight: #9a8c98;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+    }
+    body {
+      box-sizing: border-box;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary), var(--accent) 70%);
+      color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: rgba(34,34,59,0.7);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+      color: var(--highlight);
+      letter-spacing: 2px;
+    }
+    .container p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: var(--secondary);
+    }
+    .spinner {
+      margin: 1.8rem auto 0 auto;
+      border: 6px solid #fff2;
+      border-top: 6px solid var(--highlight);
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      animation: spin 1.3s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg);}
+    }
+    @media (max-width: 500px) {
+      .container { padding: 1.5rem 0.7rem; }
+      .container h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coming Soon</h1>
+	<img src="logo.jpeg" width="300" height="200" alt="Sample Image">
+    <p>We're working hard to launch our website.<br>
+      Stay tuned for a great mobile car wash experience!</p>
+    <div class="spinner"></div>
+  </div>
+</body>
+</html>
